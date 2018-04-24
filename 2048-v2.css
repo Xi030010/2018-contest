@@ -1,0 +1,1347 @@
+html, body {
+    position: relative;
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: Helvetica;
+  }
+  
+  div {
+    position: absolute;
+    /* transform: translateX(-50%); */
+    font-family: STFangsong;
+  }
+  
+  button {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+  
+  table {
+    position: absolute;
+    /* transform: translate(-50%, -50%); */
+    border-spacing: 0;
+    font-size: 0;
+  }
+  
+  tr div {
+    position: absolute;
+    display: inline-block;
+  }
+  
+  td {
+    text-align: center;
+  }
+  
+  td.static {
+    position: relative;
+    background-color: rgb(192, 178, 165);
+    border: 0.5rem solid rgb(173, 157, 142);
+    z-index: -1;
+  }
+  
+  td.empty {
+    position: relative;
+    background-color: rgb(192, 178, 165);
+    border: 0.5rem solid rgb(173, 157, 142);
+    z-index: 0;
+  }
+  
+  td.num2 {
+    background-color: rgb(223, 221, 209);
+  }
+  
+  td.num4 {
+    background-color: rgb(234, 215, 190);
+  }
+  
+  td.num8 {
+    background-color: rgb(237, 162, 102);
+  }
+  
+  td.num16 {
+    background-color: rgb(229, 120, 68);
+  }
+  
+  td.num32 {
+    background-color: rgb(240, 101, 78);
+  }
+  
+  td.num64 {
+    background-color: rgb(225, 66, 45);
+  }
+  
+  td.num128 {
+    background-color: rgb(238, 210, 87);
+  }
+  
+  td.num256 {
+    background-color: rgb(236, 200, 59);
+  }
+  
+  td.num512 {
+    background-color: rgb(221, 181, 33);
+  }
+  
+  td.num1024 {
+    background-color: rgb(219, 173, 18);
+  }
+  
+  td.num2048 {
+    background-color: rgb(221, 178, 10);
+  }
+  
+  td.num4096 {
+    background-color: rgb(81, 213, 128);
+  }
+  
+  td.add2 {
+    animation: 0.2s bigger2 forwards;
+  }
+  
+  td.add4-begin {
+    animation: 0.2s bigger4-begin forwards;
+  }
+  
+  td.add4 {
+    animation: 0.2s bigger4 forwards;
+  }
+  
+  td.add8 {
+    animation: 0.2s bigger8 forwards;
+  }
+  
+  td.add16 {
+    animation: 0.2s bigger16 forwards;
+  }
+  
+  td.add32 {
+    animation: 0.2s bigger32 forwards;
+  }
+  
+  td.add64 {
+    animation: 0.2s bigger64 forwards;
+  }
+  
+  td.add128 {
+    animation: 0.2s bigger128 forwards;
+  }
+  
+  td.add256 {
+    animation: 0.2s bigger256 forwards;
+  }
+  
+  td.add512 {
+    animation: 0.2s bigger512 forwards;
+  }
+  
+  td.add1024 {
+    animation: 0.2s bigger1024 forwards;
+  }
+  
+  td.add2048 {
+    animation: 0.2s bigger2048 forwards;
+  }
+  
+  td.add4096 {
+    animation: 0.2s bigger4096 forwards;
+  }
+  
+  @keyframes bigger2 {
+    to {
+      background-color: rgb(223, 221, 209);
+    }
+  }
+  
+  @keyframes bigger4-begin {
+    to {
+      background-color: rgb(234, 215, 190);
+    }
+  }
+  
+  @keyframes bigger4 {
+    0% {
+      position: absolute;
+      padding: 0.5rem;
+      margin: -0.5rem 0 0 -0.5rem;
+      background-color: rgb(234, 215, 190);
+      z-index: 1;
+    }
+  
+    90% {
+      position: absolute;
+      background-color: rgb(234, 215, 190);
+      z-index: 1;
+    }
+  
+    100% {
+      position: relative;
+      background-color: rgb(234, 215, 190);
+      z-index: 1;
+    }
+  }
+  
+  @keyframes bigger8 {
+    from {
+      position: absolute;
+      padding: 0.5rem;
+      margin: -0.5rem 0 0 -0.5rem;
+      background-color: rgb(237, 162, 102);
+      z-index: 1;
+    }
+  
+    90% {
+      position: absolute;
+      background-color: rgb(237, 162, 102);
+      z-index: 1;
+    }
+  
+    to {
+      position: relative;
+      background-color: rgb(237, 162, 102);
+      z-index: 1;
+    }
+  }
+  
+  @keyframes bigger16 {
+    from {
+      position: absolute;
+      padding: 0.5rem;
+      margin: -0.5rem 0 0 -0.5rem;
+      background-color: rgb(229, 120, 68);
+      z-index: 1;
+    }
+  
+    90% {
+      position: absolute;
+      background-color: rgb(229, 120, 68);
+      z-index: 1;
+    }
+  
+    to {
+      position: relative;
+      background-color: rgb(229, 120, 68);
+      z-index: 1;
+    }
+  }
+  
+  @keyframes bigger32 {
+    from {
+      position: absolute;
+      padding: 0.5rem;
+      margin: -0.5rem 0 0 -0.5rem;
+      background-color: rgb(240, 101, 78);
+      z-index: 1;
+    }
+  
+    90% {
+      position: absolute;
+      background-color: rgb(240, 101, 78);
+      z-index: 1;
+    }
+  
+    to {
+      position: relative;
+      background-color: rgb(240, 101, 78);
+      z-index: 1;
+    }
+  }
+  
+  @keyframes bigger64 {
+    from {
+      position: absolute;
+      padding: 0.5rem;
+      margin: -0.5rem 0 0 -0.5rem;
+      background-color: rgb(225, 66, 45);
+      z-index: 1;
+    }
+  
+    90% {
+      position: absolute;
+      background-color: rgb(225, 66, 45);
+      z-index: 1;
+    }
+  
+    to {
+      position: relative;
+      background-color: rgb(225, 66, 45);
+      z-index: 1;
+    }
+  }
+  
+  @keyframes bigger128 {
+    from {
+      position: absolute;
+      padding: 0.5rem;
+      margin: -0.5rem 0 0 -0.5rem;
+      background-color: rgb(238, 210, 87);
+      z-index: 1;
+    }
+  
+    90% {
+      position: absolute;
+      background-color: rgb(238, 210, 87);
+      z-index: 1;
+    }
+  
+    to {
+      position: relative;
+      background-color: rgb(238, 210, 87);
+      z-index: 1;
+    }
+  }
+  
+  @keyframes bigger256 {
+    from {
+      position: absolute;
+      padding: 0.5rem;
+      margin: -0.5rem 0 0 -0.5rem;
+      background-color: rgb(236, 200, 59);
+      z-index: 1;
+    }
+  
+    90% {
+      position: absolute;
+      background-color: rgb(236, 200, 59);
+      z-index: 1;
+    }
+  
+    to {
+      position: relative;
+      background-color: rgb(236, 200, 59);
+      z-index: 1;
+    }
+  }
+  
+  @keyframes bigger512 {
+    from {
+      position: absolute;
+      padding: 0.5rem;
+      margin: -0.5rem 0 0 -0.5rem;
+      background-color: rgb(221, 181, 33);
+      z-index: 1;
+    }
+  
+    90% {
+      position: absolute;
+      background-color: rgb(221, 181, 33);
+      z-index: 1;
+    }
+  
+    to {
+      position: relative;
+      background-color: rgb(221, 181, 33);
+      z-index: 1;
+    }
+  }
+  
+  @keyframes bigger1024 {
+    from {
+      position: absolute;
+      padding: 0.5rem;
+      margin: -0.5rem 0 0 -0.5rem;
+      background-color: rgb(219, 173, 18);
+      z-index: 1;
+    }
+  
+    90% {
+      position: absolute;
+      background-color: rgb(219, 173, 18);
+      z-index: 1;
+    }
+  
+    to {
+      position: absolute;
+      background-color: rgb(219, 173, 18);
+      z-index: 1;
+    }
+  }
+  
+  @keyframes bigger2048 {
+    from {
+      position: absolute;
+      padding: 0.5rem;
+      margin: -0.5rem 0 0 -0.5rem;
+      background-color: rgb(221, 178, 10);
+      z-index: 1;
+    }
+  
+    90% {
+      position: absolute;
+      background-color: rgb(221, 178, 10);
+      z-index: 1;
+    }
+  
+    to {
+      position: relative;
+      background-color: rgb(221, 178, 10);
+      z-index: 1;
+    }
+  }
+  
+  @keyframes bigger4096 {
+    from {
+      position: absolute;
+      padding: 0.5rem;
+      margin: -0.5rem 0 0 -0.5rem;
+      background-color: rgb(81, 213, 128);
+      z-index: 1;
+    }
+  
+    90% {
+      position: absolute;
+      background-color: rgb(81, 213, 128);
+      z-index: 1;
+    }
+  
+    to {
+      position: relative;
+      background-color: rgb(81, 213, 128);
+      z-index: 1;
+    }
+  }
+  
+  @media (min-width: 900px) {
+    button {
+      top: 24%;
+      left: 35%;
+    }
+  
+    button:hover {
+      background-color: yellow;
+      cursor: pointer;
+    }
+  
+    table {
+      top: 35%;
+      left: 35%;
+    }
+  
+    div {
+      top: 12%;
+      left: 35%;
+      font-size: 3rem;
+    }
+  
+    tr div {
+      width: 105px;
+      height: 105px;
+    }
+  
+    td.static {
+      width: 87px;
+      height: 87px;
+      font-size: 2.5rem;
+      line-height: 87px;
+    }
+  
+    td.empty {
+      width: 87px;
+      height: 87px;
+      font-size: 2.5rem;
+      line-height: 87px;
+    }
+
+    td.moveleft1-addMove0 {
+      animation: 0.2s moveleft1 forwards;
+    }
+  
+    td.moveleft2-addMove0 {
+      animation: 0.2s moveleft2 forwards;
+    }
+  
+    td.moveleft3-addMove0 {
+      animation: 0.2s moveleft3 forwards;
+    }
+  
+    td.moveright1-addMove0 {
+      animation: 0.2s moveright1 forwards;
+    }
+  
+    td.moveright2-addMove0 {
+      animation: 0.2s moveright2 forwards;
+    }
+  
+    td.moveright3-addMove0 {
+      animation: 0.2s moveright3 forwards;
+    }
+  
+    td.moveup1-addMove0 {
+      animation: 0.2s moveup1 forwards;
+    }
+  
+    td.moveup2-addMove0 {
+      animation: 0.2s moveup2 forwards;
+    }
+  
+    td.moveup3-addMove0 {
+      animation: 0.2s moveup3 forwards;
+    }
+  
+    td.movedown1-addMove0 {
+      animation: 0.2s movedown1 forwards;
+    }
+  
+    td.movedown2-addMove0 {
+      animation: 0.2s movedown2 forwards;
+    }
+  
+    td.movedown3-addMove0 {
+      animation: 0.2s movedown3 forwards;
+    }
+  
+    @keyframes moveleft1 {
+      from {
+        z-index: 1;
+      }
+      to {
+        transform: translateX(-105px);
+        z-index: 1;
+      }
+    }
+  
+    @keyframes moveleft2 {
+      from {
+        z-index: 1;
+      }
+      to {
+        transform: translateX(-210px);
+        z-index: 1;
+      }
+    }
+  
+    @keyframes moveleft3 {
+      from {
+        z-index: 1;
+      }
+      to {
+        transform: translateX(-315px);
+        z-index: 1;
+      }
+    }
+  
+    @keyframes moveright1 {
+      from {
+        z-index: 1;
+      }
+      to {
+        transform: translateX(105px);
+        z-index: 1;
+      }
+    }
+  
+    @keyframes moveright2 {
+      from {
+        z-index: 1;
+      }
+      to {
+        transform: translateX(210px);
+        z-index: 1;
+      }
+    }
+  
+    @keyframes moveright3 {
+      from {
+        z-index: 1;
+      }
+      to {
+        transform: translateX(315px);
+        z-index: 1;
+      }
+    }
+  
+    @keyframes moveup1 {
+      from {
+        z-index: 1;
+      }
+      to {
+        transform: translateY(-105px);
+        z-index: 1;
+      }
+    }
+  
+    @keyframes moveup2 {
+      from {
+        z-index: 1;
+      }
+      to {
+        transform: translateY(-210px);
+        z-index: 1;
+      }
+    }
+  
+    @keyframes moveup3 {
+      from {
+        z-index: 1;
+      }
+      to {
+        transform: translateY(-315px);
+        z-index: 1;
+      }
+    }
+  
+    @keyframes movedown1 {
+      from {
+        z-index: 1;
+      }
+      to {
+        transform: translateY(105px);
+        z-index: 1;
+      }
+    }
+  
+    @keyframes movedown2 {
+      from {
+        z-index: 1;
+      }
+      to {
+        transform: translateY(210px);
+        z-index: 1;
+      }
+    }
+  
+    @keyframes movedown3 {
+      from {
+        z-index: 1;
+      }
+      to {
+        transform: translateY(315px);
+        z-index: 1;
+      }
+    }
+  
+
+    /* 求和一边的移动动画 */
+    td.moveleft0-addMove1 {
+      animation: 0.2s moveleft0-addMove1 forwards;
+    }
+
+    td.moveleft1-addMove1 {
+      animation: 0.2s moveleft1-addMove1 forwards;
+    }
+  
+    td.moveleft2-addMove1 {
+      animation: 0.2s moveleft2-addMove1 forwards;
+    }
+  
+    td.moveleft3-addMove1 {
+      animation: 0.2s moveleft3-addMove1 forwards;
+    }
+  
+    td.moveright0-addMove1 {
+      animation: 0.2s moveright0-addMove1 forwards;
+    }
+
+    td.moveright1-addMove1 {
+      animation: 0.2s moveright1-addMove1 forwards;
+    }
+  
+    td.moveright2-addMove1 {
+      animation: 0.2s moveright2-addMove1 forwards;
+    }
+  
+    td.moveright3-addMove1 {
+      animation: 0.2s moveright3-addMove1 forwards;
+    }
+  
+    td.moveup0-addMove1 {
+      animation: 0.2s moveup0-addMove1 forwards;
+    }
+
+    td.moveup1-addMove1 {
+      animation: 0.2s moveup1-addMove1 forwards;
+    }
+  
+    td.moveup2-addMove1 {
+      animation: 0.2s moveup2-addMove1 forwards;
+    }
+  
+    td.moveup3-addMove1 {
+      animation: 0.2s moveup3-addMove1 forwards;
+    }
+
+    td.movedown0-addMove1 {
+      animation: 0.2s movedown0-addMove1 forwards;
+    }
+  
+    td.movedown1-addMove1 {
+      animation: 0.2s movedown1-addMove1 forwards;
+    }
+  
+    td.movedown2-addMove1 {
+      animation: 0.2s movedown2-addMove1 forwards;
+    }
+  
+    td.movedown3-addMove1 {
+      animation: 0.2s movedown3-addMove1 forwards;
+    }
+
+    /* 求和一边的移动动画帧 */
+    @keyframes moveup0-addMove1 {
+      to {
+        z-index: -1;
+        transform: translateY(-105px);
+      }
+    }
+
+    @keyframes moveup1-addMove1 {
+      from {
+        z-index: 1;
+      }
+      50% {
+        z-index: 1;
+        transform: translateY(-105px);
+      }
+      to {
+        z-index: -1;
+        transform: translateY(-210px);
+      }
+    }
+
+    @keyframes moveup2-addMove1 {
+      from {
+        z-index: 1;
+      }
+      67% {
+        z-index: 1;
+        transform: translateY(-210px);
+      }
+      to {
+        z-index: -1;
+        transform: translateY(-315px);
+      }
+    }
+
+    @keyframes moveup3-addMove1 {
+      from {
+        z-index: 1;
+      }
+      75% {
+        z-index: 1;
+        transform: translateY(-315px);
+      }
+      to {
+        z-index: -1;
+        transform: translateY(-420px);
+      }
+    }
+  
+    @keyframes movedown0-addMove1 {
+      to {
+        z-index: -1;
+        transform: translateY(105px);
+      }
+    }
+
+    @keyframes movedown1-addMove1 {
+      from {
+        z-index: 1;
+      }
+      50% {
+        z-index: 1;
+        transform: translateY(105px);
+      }
+      to {
+        z-index: -1;
+        transform: translateY(210px);
+      }
+    }
+
+    @keyframes movedown2-addMove1 {
+      from {
+        z-index: 1;
+      }
+      67% {
+        z-index: 1;
+        transform: translateY(210px);
+      }
+      to {
+        z-index: -1;
+        transform: translateY(315px);
+      }
+    }
+
+    @keyframes movedown3-addMove1 {
+      from {
+        z-index: 1;
+      }
+      75% {
+        z-index: 1;
+        transform: translateY(315px);
+      }
+      to {
+        z-index: -1;
+        transform: translateY(420px);
+      }
+    }
+  
+    @keyframes moveleft0-addMove1 {
+      to {
+        z-index: -1;
+        transform: translateX(-105px);
+      }
+    }
+
+    @keyframes moveleft1-addMove1 {
+      from {
+        z-index: 1;
+      }
+      50% {
+        z-index: 1;
+        transform: translateX(-105px);
+      }
+      to {
+        z-index: -1;
+        transform: translateX(-210px);
+      }
+    }
+
+    @keyframes moveleft2-addMove1 {
+      from {
+        z-index: 1;
+      }
+      67% {
+        z-index: 1;
+        transform: translateX(-210px);
+      }
+      to {
+        z-index: -1;
+        transform: translateX(-315px);
+      }
+    }
+
+    @keyframes moveleft3-addMove1 {
+      from {
+        z-index: 1;
+      }
+      75% {
+        z-index: 1;
+        transform: translateX(-315px);
+      }
+      to {
+        z-index: -1;
+        transform: translateX(-420px);
+      }
+    }
+  
+    @keyframes moveright0-addMove1 {
+      to {
+        z-index: -1;
+        transform: translateX(105px);
+      }
+    }
+
+    @keyframes moveright1-addMove1 {
+      from {
+        z-index: 1;
+      }
+      50% {
+        z-index: 1;
+        transform: translateX(105px);
+      }
+      to {
+        z-index: -1;
+        transform: translateX(210px);
+      }
+    }
+
+    @keyframes moveright2-addMove1 {
+      from {
+        z-index: 1;
+      }
+      67% {
+        z-index: 1;
+        transform: translateX(210px);
+      }
+      to {
+        z-index: -1;
+        transform: translateX(315px);
+      }
+    }
+
+    @keyframes moveright3-addMove1 {
+      from {
+        z-index: 1;
+      }
+      75% {
+        z-index: 1;
+        transform: translateX(315px);
+      }
+      to {
+        z-index: -1;
+        transform: translateX(420px);
+      }
+    }
+  }
+  
+  @media (max-width: 900px) {
+    button {
+      top: 21%;
+      left: 2%;
+      text-align: left;
+    }
+    
+    table {
+      top: 30%;
+      left: 1.6%;
+    }
+  
+    div {
+      top: 12%;
+      left: 2%;
+      font-size: 2rem;
+    }
+  
+    tr div {
+      width: 91px;
+      height: 91px;
+    }
+
+    td.static {
+      width: 73px;
+      height: 73px;
+      font-size: 2rem;
+      line-height: 73px;
+    }
+  
+    td.empty {
+      width: 73px;
+      height: 73px;
+      font-size: 2rem;
+      line-height: 73px;
+    }
+
+    td.moveleft1-addMove0 {
+      animation: 0.2s moveleft1 forwards;
+    }
+  
+    td.moveleft2-addMove0 {
+      animation: 0.2s moveleft2 forwards;
+    }
+  
+    td.moveleft3-addMove0 {
+      animation: 0.2s moveleft3 forwards;
+    }
+  
+    td.moveright1-addMove0 {
+      animation: 0.2s moveright1 forwards;
+    }
+  
+    td.moveright2-addMove0 {
+      animation: 0.2s moveright2 forwards;
+    }
+  
+    td.moveright3-addMove0 {
+      animation: 0.2s moveright3 forwards;
+    }
+  
+    td.moveup1-addMove0 {
+      animation: 0.2s moveup1 forwards;
+    }
+  
+    td.moveup2-addMove0 {
+      animation: 0.2s moveup2 forwards;
+    }
+  
+    td.moveup3-addMove0 {
+      animation: 0.2s moveup3 forwards;
+    }
+  
+    td.movedown1-addMove0 {
+      animation: 0.2s movedown1 forwards;
+    }
+  
+    td.movedown2-addMove0 {
+      animation: 0.2s movedown2 forwards;
+    }
+  
+    td.movedown3-addMove0 {
+      animation: 0.2s movedown3 forwards;
+    }
+  
+    @keyframes moveleft1 {
+      from {
+        z-index: 1;
+      }
+      to {
+        transform: translateX(-91px);
+        z-index: 1;
+      }
+    }
+  
+    @keyframes moveleft2 {
+      from {
+        z-index: 1;
+      }
+      to {
+        transform: translateX(-182px);
+        z-index: 1;
+      }
+    }
+  
+    @keyframes moveleft3 {
+      from {
+        z-index: 1;
+      }
+      to {
+        transform: translateX(-273px);
+        z-index: 1;
+      }
+    }
+  
+    @keyframes moveright1 {
+      from {
+        z-index: 1;
+      }
+      to {
+        transform: translateX(91px);
+        z-index: 1;
+      }
+    }
+  
+    @keyframes moveright2 {
+      from {
+        z-index: 1;
+      }
+      to {
+        transform: translateX(182px);
+        z-index: 1;
+      }
+    }
+  
+    @keyframes moveright3 {
+      from {
+        z-index: 1;
+      }
+      to {
+        transform: translateX(273px);
+        z-index: 1;
+      }
+    }
+  
+    @keyframes moveup1 {
+      from {
+        z-index: 1;
+      }
+      to {
+        transform: translateY(-91px);
+        z-index: 1;
+      }
+    }
+  
+    @keyframes moveup2 {
+      from {
+        z-index: 1;
+      }
+      to {
+        transform: translateY(-182px);
+        z-index: 1;
+      }
+    }
+  
+    @keyframes moveup3 {
+      from {
+        z-index: 1;
+      }
+      to {
+        transform: translateY(-273px);
+        z-index: 1;
+      }
+    }
+  
+    @keyframes movedown1 {
+      from {
+        z-index: 1;
+      }
+      to {
+        transform: translateY(91px);
+        z-index: 1;
+      }
+    }
+  
+    @keyframes movedown2 {
+      from {
+        z-index: 1;
+      }
+      to {
+        transform: translateY(182px);
+        z-index: 1;
+      }
+    }
+  
+    @keyframes movedown3 {
+      from {
+        z-index: 1;
+      }
+      to {
+        transform: translateY(273px);
+        z-index: 1;
+      }
+    }
+  
+  
+    /* 求和一边的移动动画 */
+    td.moveleft0-addMove1 {
+      animation: 0.2s moveleft0-addMove1 forwards;
+    }
+  
+    td.moveleft1-addMove1 {
+      animation: 0.2s moveleft1-addMove1 forwards;
+    }
+  
+    td.moveleft2-addMove1 {
+      animation: 0.2s moveleft2-addMove1 forwards;
+    }
+  
+    td.moveleft3-addMove1 {
+      animation: 0.2s moveleft3-addMove1 forwards;
+    }
+  
+    td.moveright0-addMove1 {
+      animation: 0.2s moveright0-addMove1 forwards;
+    }
+  
+    td.moveright1-addMove1 {
+      animation: 0.2s moveright1-addMove1 forwards;
+    }
+  
+    td.moveright2-addMove1 {
+      animation: 0.2s moveright2-addMove1 forwards;
+    }
+  
+    td.moveright3-addMove1 {
+      animation: 0.2s moveright3-addMove1 forwards;
+    }
+  
+    td.moveup0-addMove1 {
+      animation: 0.2s moveup0-addMove1 forwards;
+    }
+  
+    td.moveup1-addMove1 {
+      animation: 0.2s moveup1-addMove1 forwards;
+    }
+  
+    td.moveup2-addMove1 {
+      animation: 0.2s moveup2-addMove1 forwards;
+    }
+  
+    td.moveup3-addMove1 {
+      animation: 0.2s moveup3-addMove1 forwards;
+    }
+  
+    td.movedown0-addMove1 {
+      animation: 0.2s movedown0-addMove1 forwards;
+    }
+  
+    td.movedown1-addMove1 {
+      animation: 0.2s movedown1-addMove1 forwards;
+    }
+  
+    td.movedown2-addMove1 {
+      animation: 0.2s movedown2-addMove1 forwards;
+    }
+  
+    td.movedown3-addMove1 {
+      animation: 0.2s movedown3-addMove1 forwards;
+    }
+  
+    /* 求和一边的移动动画帧 */
+    @keyframes moveup0-addMove1 {
+      to {
+        z-index: -1;
+        transform: translateY(-91px);
+      }
+    }
+  
+    @keyframes moveup1-addMove1 {
+      from {
+        z-index: 1;
+      }
+      50% {
+        z-index: 1;
+        transform: translateY(-91px);
+      }
+      to {
+        z-index: -1;
+        transform: translateY(-182px);
+      }
+    }
+  
+    @keyframes moveup2-addMove1 {
+      from {
+        z-index: 1;
+      }
+      67% {
+        z-index: 1;
+        transform: translateY(-182px);
+      }
+      to {
+        z-index: -1;
+        transform: translateY(-273px);
+      }
+    }
+  
+    @keyframes moveup3-addMove1 {
+      from {
+        z-index: 1;
+      }
+      75% {
+        z-index: 1;
+        transform: translateY(-273px);
+      }
+      to {
+        z-index: -1;
+        transform: translateY(-364px);
+      }
+    }
+  
+    @keyframes movedown0-addMove1 {
+      to {
+        z-index: -1;
+        transform: translateY(91px);
+      }
+    }
+  
+    @keyframes movedown1-addMove1 {
+      from {
+        z-index: 1;
+      }
+      50% {
+        z-index: 1;
+        transform: translateY(91px);
+      }
+      to {
+        z-index: -1;
+        transform: translateY(182px);
+      }
+    }
+  
+    @keyframes movedown2-addMove1 {
+      from {
+        z-index: 1;
+      }
+      67% {
+        z-index: 1;
+        transform: translateY(182px);
+      }
+      to {
+        z-index: -1;
+        transform: translateY(273px);
+      }
+    }
+  
+    @keyframes movedown3-addMove1 {
+      from {
+        z-index: 1;
+      }
+      75% {
+        z-index: 1;
+        transform: translateY(273px);
+      }
+      to {
+        z-index: -1;
+        transform: translateY(364px);
+      }
+    }
+  
+    @keyframes moveleft0-addMove1 {
+      to {
+        z-index: -1;
+        transform: translateX(-91px);
+      }
+    }
+  
+    @keyframes moveleft1-addMove1 {
+      from {
+        z-index: 1;
+      }
+      50% {
+        z-index: 1;
+        transform: translateX(-91px);
+      }
+      to {
+        z-index: -1;
+        transform: translateX(-182px);
+      }
+    }
+  
+    @keyframes moveleft2-addMove1 {
+      from {
+        z-index: 1;
+      }
+      67% {
+        z-index: 1;
+        transform: translateX(-182px);
+      }
+      to {
+        z-index: -1;
+        transform: translateX(-273px);
+      }
+    }
+  
+    @keyframes moveleft3-addMove1 {
+      from {
+        z-index: 1;
+      }
+      75% {
+        z-index: 1;
+        transform: translateX(-273px);
+      }
+      to {
+        z-index: -1;
+        transform: translateX(-364px);
+      }
+    }
+  
+    @keyframes moveright0-addMove1 {
+      to {
+        z-index: -1;
+        transform: translateX(91px);
+      }
+    }
+  
+    @keyframes moveright1-addMove1 {
+      from {
+        z-index: 1;
+      }
+      50% {
+        z-index: 1;
+        transform: translateX(91px);
+      }
+      to {
+        z-index: -1;
+        transform: translateX(182px);
+      }
+    }
+  
+    @keyframes moveright2-addMove1 {
+      from {
+        z-index: 1;
+      }
+      67% {
+        z-index: 1;
+        transform: translateX(182px);
+      }
+      to {
+        z-index: -1;
+        transform: translateX(273px);
+      }
+    }
+  
+    @keyframes moveright3-addMove1 {
+      from {
+        z-index: 1;
+      }
+      75% {
+        z-index: 1;
+        transform: translateX(273px);
+      }
+      to {
+        z-index: -1;
+        transform: translateX(364px);
+      }
+    }
+  }
+  
